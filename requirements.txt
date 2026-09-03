@@ -1,0 +1,8 @@
+SpeechRecognition
+PyAudio
+pyttsx4
+requests
+google-genai
+edge-tts
+pygame
+python-dotenv
