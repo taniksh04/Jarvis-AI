@@ -77,6 +77,12 @@ After hearing the wake word, try:
 
 Jarvis tries Edge TTS first because it provides natural online voices. If Edge TTS or Pygame audio playback fails, the application automatically uses offline `pyttsx4` speech instead.
 
+Here are some different voices provided by Edge TTS. You can Use them according to your convenience. Just change "en-US-ChristopherNeural" this with any of 
+the voice codes.
+("en-US-ChristopherNeural"-Male-US-Deep,authoritative)("en-US-GuyNeural"-Male-US-Conversational,natural) 
+("en-US-JennyNeural"-Female-US-Friendly,professional)("en-GB-RyanNeural"-Male-UK-Sophisticated British)
+("en-GB-SoniaNeural"-Female-UK-Clear British accent)("en-IN-PrabhatNeural"-Male-India-Expressive Indian accent)
+
 Temporary audio files are removed after playback, including when an error occurs.
 
 ## Security
