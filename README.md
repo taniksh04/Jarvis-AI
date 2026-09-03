@@ -18,6 +18,7 @@ Jarvis is a Python voice assistant that listens for the wake word `Jarvis`, open
 - Python 3.12 or compatible Python version
 - A working microphone and speakers
 - Internet access for Google Speech Recognition, Gemini, NewsAPI, and Edge TTS
+- API Keys of Google AI Studios and NewsAPI
 
 ## Setup
 
