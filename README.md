@@ -70,7 +70,7 @@ After hearing the wake word, try:
 - `Open Gmail`
 - `Open news`
 - `Play Superman`
-- `Tell news`
+- `What is the news`
 - Ask a general question
 
 ## TTS Fallback
