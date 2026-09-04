@@ -90,16 +90,22 @@ def processCommand(c):
 
     # Open Various Websites
     if "open google" in command:
+        speak("Opening Google")
         webbrowser.open("https://google.com")
     elif "open youtube" in command:
+        speak("Opening Youtube")
         webbrowser.open("https://youtube.com")
     elif "open gmail" in command:
+        speak("Opening Gmail")
         webbrowser.open("https://gmail.com")
     elif "open news" in command:
+        speak("Opening Hindustan Times News Webpage ")
         webbrowser.open("https://www.hindustantimes.com")
     elif "open code wars" in command:
+        speak("Opening Codewars")
         webbrowser.open("https://www.codewars.com")
     elif "open github" in command:
+        speak("Opening Github")
         webbrowser.open("https://www.github.com")
     
     # Play Music from musicLibrary
@@ -119,7 +125,7 @@ def processCommand(c):
             speak("Please tell me which song to play.")
 
     # Speak NEWS HEADLINES from NEWS_API
-    elif "tell news" in command:
+    elif "what is the news" in command:
         response = requests.get(f"https://newsapi.org/v2/everything?q=india&sortBy=publishedAt&language=en&apiKey={NEWS_API_KEY}", timeout=10)
         if response.status_code == 200:
             data = response.json()
