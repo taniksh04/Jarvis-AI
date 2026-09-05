@@ -154,6 +154,10 @@ if __name__ == "__main__":
         print("Calibrating microphone...")
         r.adjust_for_ambient_noise(source, duration=1)
 
+        # Keep the calibrated threshold stable during the long-running loop.
+        r.dynamic_energy_threshold = False
+        print(f"Microphone ready (energy threshold: {r.energy_threshold:.0f})")
+    
     # Getting Jarvis Ready for Commands
     while True:
 
@@ -190,4 +194,4 @@ if __name__ == "__main__":
             print("Check your internet connection, firewall, proxy, or Google Speech service.")
         # Any Other Errors    
         except Exception as e:
-            print("Error {0}".format(e))
+            print(f"Unexpected listening error: {type(e).__name__}: {e}")
